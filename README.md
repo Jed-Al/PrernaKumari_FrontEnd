@@ -20,6 +20,6 @@ The prop `items` passed inside `WrappedListComponent` is `null`. We need to pass
 **3. Please fix, optimize, and/or modify the component as much as you think is necessary.**
 
 The modified has:
-1) only one Memozied component which is sufficient 
+1) only one Memoized component which is sufficient 
 2) an option to add new items to the list of items
 3) an option to delete any item the user wants 
