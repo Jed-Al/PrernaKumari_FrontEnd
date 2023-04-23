@@ -39,11 +39,10 @@ const WrappedListComponent = ({ items }) => {
     };
 
     const deleteItem = index => {
-        // const newItemsList = newItems.filter((item) => item.index !== index);
-        // setNewItems(newItemsList)
-        newItems.splice(index, 1);
-        selectedIndex(null);
-        setNewItems(newItems);
+        const newItemsList = [...newItems];
+        newItemsList.splice(index, 1);
+        setNewItems(newItemsList);
+        setSelectedIndex(null);
     };
 
     const addItem = () => {
