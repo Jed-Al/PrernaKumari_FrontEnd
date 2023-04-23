@@ -25,9 +25,8 @@ The modified code has:
 3) an option to delete any item the user wants
 4) a more pleasing look
 
-js 
-code here 
-```
+ 
+```js
 import React, { useState, memo } from 'react';
 import { Button, Card, Input } from "reactstrap";
 import PropTypes from 'prop-types';
@@ -67,8 +66,6 @@ const WrappedListComponent = ({ items }) => {
     };
 
     const deleteItem = index => {
-        // const newItemsList = newItems.filter((item) => item.index !== index);
-        // setNewItems(newItemsList)
         newItems.splice(index, 1);
         selectedIndex(null);
         setNewItems(newItems);
