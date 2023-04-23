@@ -13,7 +13,11 @@ const WrappedSingleListItem = ({ index, isSelected, onClickHandler, onDelete, te
         >
             {text}
             <Button
-                onClick={() => onDelete(index)}>Delete</Button>
+                onClick={(e) => {
+                    e.stopPropagation();
+                    onDelete(index)
+                }
+                }>Delete</Button>
         </li>
     );
 };
