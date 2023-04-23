@@ -22,4 +22,5 @@ The prop `items` passed inside `WrappedListComponent` is `null`. We need to pass
 The modified code has:
 1) only one Memoized component which is sufficient 
 2) an option to add new items to the list of items
-3) an option to delete any item the user wants 
+3) an option to delete any item the user wants
+4) a more pleasing look
